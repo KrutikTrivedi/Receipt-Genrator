@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+
+:root {
+  --primary-color: #FFD700; /* yellow */
+  --secondary-color: #000000; /* black */
+}
+
+body {
+  margin: 0;
+  font-family: 'Special Elite', monospace; /* typewriter font */
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+input, button, select, textarea {
+  font-family: 'Special Elite', monospace;
+}
+
+input, textarea {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 8px;
+  margin: 5px 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--primary-color);
+  opacity: 0.7;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus {
+  background-color: rgba(255, 215, 0, 0.2);
+  color: var(--secondary-color);
+  outline: none;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Special Elite', monospace;
+}
+
+button:hover {
+  background-color: #e6c200;
+}
+
+.navbar {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Glow effect for yellow areas */
+.glow {
+  text-shadow: 0 0 8px #FFD700, 0 0 15px #FFD700;
+}
+
+/* Transparent input styling handled above */
